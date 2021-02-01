@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 clear
 echo "Set URL"
 read arg
