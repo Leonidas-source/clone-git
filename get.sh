@@ -1,4 +1,16 @@
 #!/bin/bash
+error() {
+  clear
+  echo "please install wget"
+  exit
+}
+error1() {
+  clear
+  echo "please install unzip"
+  exit
+}
+ls /usr/bin | grep -w "wget" || error
+ls /usr/bin | grep -w "unzip" || error1
 clear
 echo "Set URL"
 read arg
